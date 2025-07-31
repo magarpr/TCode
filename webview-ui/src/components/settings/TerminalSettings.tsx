@@ -229,7 +229,7 @@ export const TerminalSettings = ({
 
 						<div>
 							<VSCodeCheckbox
-								checked={terminalShellIntegrationDisabled ?? false}
+								checked={terminalShellIntegrationDisabled ?? true /* kilocode_change: default */}
 								onChange={(e: any) =>
 									setCachedStateField("terminalShellIntegrationDisabled", e.target.checked)
 								}>

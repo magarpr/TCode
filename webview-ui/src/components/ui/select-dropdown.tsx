@@ -31,6 +31,7 @@ export interface SelectDropdownProps {
 	options: DropdownOption[]
 	onChange: (value: string) => void
 	disabled?: boolean
+	initiallyOpen?: boolean // kilocode_change
 	title?: string
 	triggerClassName?: string
 	contentClassName?: string
@@ -52,6 +53,7 @@ export const SelectDropdown = React.memo(
 				options,
 				onChange,
 				disabled = false,
+				initiallyOpen = false, // kilocode_change
 				title = "",
 				triggerClassName = "",
 				contentClassName = "",
@@ -67,7 +69,7 @@ export const SelectDropdown = React.memo(
 			ref,
 		) => {
 			const { t } = useTranslation()
-			const [open, setOpen] = React.useState(false)
+			const [open, setOpen] = React.useState(initiallyOpen) // kilocode_change
 			const [searchValue, setSearchValue] = React.useState("")
 			const searchInputRef = React.useRef<HTMLInputElement>(null)
 			const portalContainer = useRooPortal("roo-portal")

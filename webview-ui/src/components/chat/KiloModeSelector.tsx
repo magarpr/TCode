@@ -56,6 +56,7 @@ export const KiloModeSelector = ({
 					value: mode.slug,
 					label: mode.name,
 					codicon: mode.iconName,
+					description: mode.description, // kilocode_change
 					type: DropdownOptionType.ITEM,
 				})),
 				{

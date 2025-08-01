@@ -1,4 +1,4 @@
-# Kilo Code Community Code of Conduct
+# TAKARA AI Community Code of Conduct
 
 ## Our Pledge
 

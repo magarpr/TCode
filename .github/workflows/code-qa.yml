@@ -1,4 +1,4 @@
-name: Code QA Kilo Code
+name: Code QA TAKARA AI
 
 on:
     workflow_dispatch:

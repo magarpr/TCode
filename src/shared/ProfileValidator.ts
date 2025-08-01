@@ -64,8 +64,6 @@ export class ProfileValidator {
 			case "mistral":
 			case "deepseek":
 			case "xai":
-			case "groq":
-			case "chutes":
 				return profile.apiModelId
 			case "litellm":
 				return profile.litellmModelId

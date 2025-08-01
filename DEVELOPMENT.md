@@ -7,7 +7,7 @@ Welcome to the TAKARA AI development guide! This document will help you set up y
 Before you begin, make sure you have the following installed:
 
 1. **Git** - For version control
-2. **Node.js** (version [v20.19.2](https://github.com/Kilo-Org/kilocode/blob/main/.nvmrc) recommended)
+2. **Node.js** (version [v20.19.2](https://github.com/Kilo-Org/takara-ai/blob/main/.nvmrc) recommended)
 3. **pnpm** - Package manager (https://pnpm.io/)
 4. **Visual Studio Code** - Our recommended IDE for development
 
@@ -18,12 +18,12 @@ Before you begin, make sure you have the following installed:
 1. **Fork and Clone the Repository**:
 
     - **Fork the Repository**:
-        - Visit the [TAKARA AI GitHub repository](https://github.com/Kilo-Org/kilocode)
+        - Visit the [TAKARA AI GitHub repository](https://github.com/Kilo-Org/takara-ai)
         - Click the "Fork" button in the top-right corner to create your own copy.
     - **Clone Your Fork**:
         ```bash
-        git clone https://github.com/[YOUR-USERNAME]/kilocode.git
-        cd kilocode
+        git clone https://github.com/[YOUR-USERNAME]/takara-ai.git
+        cd takara-ai
         ```
         Replace `[YOUR-USERNAME]` with your actual GitHub username.
 
@@ -43,7 +43,7 @@ While not strictly necessary for running the extension, these extensions are rec
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Integrates ESLint into VS Code.
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Integrates Prettier into VS Code.
 
-The full list of recommended extensions is [here](https://github.com/Kilo-Org/kilocode/blob/main/.vscode/extensions.json)
+The full list of recommended extensions is [here](https://github.com/Kilo-Org/takara-ai/blob/main/.vscode/extensions.json)
 
 ### Project Structure
 
@@ -174,11 +174,11 @@ These hooks help maintain code quality and consistency. If you encounter issues 
 
 We welcome contributions to TAKARA AI! Here's how you can help:
 
-1. **Report an issue** using [GitHub Issues](https://github.com/Kilo-Org/kilocode/issues)
+1. **Report an issue** using [GitHub Issues](https://github.com/Kilo-Org/takara-ai/issues)
 2. **Find an issue** and submit a Pull Request with your fix
 3. **Write tests** to improve Code Coverage
-4. **Improve Documentation** at [kilocode.ai/docs](https://kilocode.ai/docs)
-5. **Suggest a new feature** using [GitHub Discussions](https://github.com/Kilo-Org/kilocode/discussions/categories/ideas)!
+4. **Improve Documentation** at [takara.ai/docs](https://takara.ai/docs)
+5. **Suggest a new feature** using [GitHub Discussions](https://github.com/Kilo-Org/takara-ai/discussions/categories/ideas)!
 6. Want to **implement something new**? Awesome! We'd be glad to support you on [Discord](https://discord.gg/Ja6BkfyTzJ)!
 
 ## Community

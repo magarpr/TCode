@@ -1,7 +1,7 @@
 {
 	"welcome": {
-		"greeting": "Chào mừng bạn đến với Kilo Code!",
-		"introText1": "Kilo Code là một agent lập trình AI miễn phí và mã nguồn mở.",
+		"greeting": "Chào mừng bạn đến với Takara AI!",
+		"introText1": "Takara AI là một agent lập trình AI miễn phí và mã nguồn mở.",
 		"introText2": "Hoạt động với các mô hình AI mới nhất như Claude 4 Sonnet, Gemini 2.5 Pro, GPT-4.1, và hơn 450 mô hình khác.",
 		"introText3": "Tạo tài khoản miễn phí và nhận token trị giá $20 để sử dụng với bất kỳ mô hình AI nào.",
 		"ctaButton": "Bắt đầu",
@@ -11,7 +11,7 @@
 	},
 	"lowCreditWarning": {
 		"addCredit": "Thêm tín dụng",
-		"lowBalance": "Số dư Kilo Code của bạn thấp"
+		"lowBalance": "Số dư Takara AI của bạn thấp"
 	},
 	"notifications": {
 		"toolRequest": "Yêu cầu công cụ đang chờ phê duyệt",
@@ -25,25 +25,25 @@
 		"contextManagement": {
 			"allowVeryLargeReads": {
 				"label": "Cho phép đọc tệp rất lớn",
-				"description": "Khi bật, Kilo Code sẽ thực hiện đọc tệp hoặc đầu ra MCP rất lớn ngay cả khi có khả năng cao làm tràn cửa sổ ngữ cảnh (kích thước nội dung >80% cửa sổ ngữ cảnh)."
+				"description": "Khi bật, Takara AI sẽ thực hiện đọc tệp hoặc đầu ra MCP rất lớn ngay cả khi có khả năng cao làm tràn cửa sổ ngữ cảnh (kích thước nội dung >80% cửa sổ ngữ cảnh)."
 			}
 		},
 		"provider": {
-			"account": "Tài khoản Kilo Code",
-			"apiKey": "Khóa API Kilo Code",
-			"login": "Đăng nhập vào Kilo Code",
-			"logout": "Đăng xuất khỏi Kilo Code",
+			"account": "Tài khoản Takara AI",
+			"apiKey": "Khóa API Takara AI",
+			"login": "Đăng nhập vào Takara AI",
+			"logout": "Đăng xuất khỏi Takara AI",
 			"providerRouting": {
-				"title": "Kilo Code - Định tuyến nhà cung cấp OpenRouter",
-				"description": "Kilo Code định tuyến các yêu cầu đến các nhà cung cấp tốt nhất có sẵn cho mô hình của bạn. Theo mặc định, các yêu cầu được cân bằng tải trên các nhà cung cấp hàng đầu để tối đa hóa thời gian hoạt động. Tuy nhiên, bạn có thể chọn một nhà cung cấp cụ thể để sử dụng cho mô hình này."
+				"title": "Takara AI - Định tuyến nhà cung cấp OpenRouter",
+				"description": "Takara AI định tuyến các yêu cầu đến các nhà cung cấp tốt nhất có sẵn cho mô hình của bạn. Theo mặc định, các yêu cầu được cân bằng tải trên các nhà cung cấp hàng đầu để tối đa hóa thời gian hoạt động. Tuy nhiên, bạn có thể chọn một nhà cung cấp cụ thể để sử dụng cho mô hình này."
 			}
 		},
 		"systemNotifications": {
 			"label": "Bật thông báo hệ thống",
-			"description": "Khi bật, Kilo Code sẽ gửi thông báo hệ thống cho các sự kiện quan trọng như hoàn thành nhiệm vụ hoặc lỗi.",
+			"description": "Khi bật, Takara AI sẽ gửi thông báo hệ thống cho các sự kiện quan trọng như hoàn thành nhiệm vụ hoặc lỗi.",
 			"testButton": "Kiểm tra thông báo",
-			"testTitle": "Kilo Code",
-			"testMessage": "Đây là thông báo kiểm tra từ Kilo Code."
+			"testTitle": "Takara AI",
+			"testMessage": "Đây là thông báo kiểm tra từ Takara AI."
 		},
 		"terminal": {
 			"commandGenerator": {
@@ -58,7 +58,7 @@
 	},
 	"chat": {
 		"condense": {
-			"wantsToCondense": "Kilo Code muốn tóm tắt cuộc trò chuyện của bạn",
+			"wantsToCondense": "Takara AI muốn tóm tắt cuộc trò chuyện của bạn",
 			"condenseConversation": "Tóm tắt cuộc trò chuyện"
 		}
 	},
@@ -81,15 +81,15 @@
 	},
 	"docs": "Tài liệu",
 	"rules": {
-		"tooltip": "Quản lý Quy tắc & Quy trình làm việc Kilo Code",
-		"ariaLabel": "Quy tắc Kilo Code",
+		"tooltip": "Quản lý Quy tắc & Quy trình làm việc Takara AI",
+		"ariaLabel": "Quy tắc Takara AI",
 		"tabs": {
 			"rules": "Quy tắc",
 			"workflows": "Quy trình làm việc"
 		},
 		"description": {
-			"rules": "Quy tắc cho phép bạn cung cấp hướng dẫn cho Kilo Code mà nó phải tuân theo trong tất cả các chế độ và cho tất cả các prompt. Chúng là một cách bền vững để bao gồm ngữ cảnh và tùy chọn cho tất cả các cuộc trò chuyện trong workspace của bạn hoặc toàn cầu.",
-			"workflows": "Quy trình làm việc là một mẫu được chuẩn bị cho một cuộc trò chuyện. Quy trình làm việc cho phép bạn xác định các prompt mà bạn sử dụng thường xuyên, và có thể bao gồm một loạt các bước để hướng dẫn Kilo Code thông qua các tác vụ lặp đi lặp lại, chẳng hạn như triển khai dịch vụ hoặc gửi PR. Để gọi quy trình làm việc, hãy nhập",
+			"rules": "Quy tắc cho phép bạn cung cấp hướng dẫn cho Takara AI mà nó phải tuân theo trong tất cả các chế độ và cho tất cả các prompt. Chúng là một cách bền vững để bao gồm ngữ cảnh và tùy chọn cho tất cả các cuộc trò chuyện trong workspace của bạn hoặc toàn cầu.",
+			"workflows": "Quy trình làm việc là một mẫu được chuẩn bị cho một cuộc trò chuyện. Quy trình làm việc cho phép bạn xác định các prompt mà bạn sử dụng thường xuyên, và có thể bao gồm một loạt các bước để hướng dẫn Takara AI thông qua các tác vụ lặp đi lặp lại, chẳng hạn như triển khai dịch vụ hoặc gửi PR. Để gọi quy trình làm việc, hãy nhập",
 			"workflowsInChat": "trong chat."
 		},
 		"sections": {

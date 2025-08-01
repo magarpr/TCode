@@ -1031,14 +1031,14 @@ export class ClineProvider
 		// Get platform-specific application data directory
 		let mcpServersDir: string
 		if (process.platform === "win32") {
-			// Windows: %APPDATA%\Kilo-Code\MCP
-			mcpServersDir = path.join(os.homedir(), "AppData", "Roaming", "Kilo-Code", "MCP")
+			// Windows: %APPDATA%\Takara-AI\MCP
+			mcpServersDir = path.join(os.homedir(), "AppData", "Roaming", "Takara-AI", "MCP")
 		} else if (process.platform === "darwin") {
-			// macOS: ~/Documents/Kilo-Code/MCP
-			mcpServersDir = path.join(os.homedir(), "Documents", "Kilo-Code", "MCP")
+			// macOS: ~/Documents/Takara-AI/MCP
+			mcpServersDir = path.join(os.homedir(), "Documents", "Takara-AI", "MCP")
 		} else {
-			// Linux: ~/.local/share/Kilo-Code/MCP
-			mcpServersDir = path.join(os.homedir(), ".local", "share", "Kilo-Code", "MCP")
+			// Linux: ~/.local/share/Takara-AI/MCP
+			mcpServersDir = path.join(os.homedir(), ".local", "share", "Takara-AI", "MCP")
 		}
 
 		try {
@@ -1135,7 +1135,7 @@ export class ClineProvider
 	}
 
 	// kilocode_change:
-	async handleKiloCodeCallback(token: string) {
+	async handleTakaraAICallback(token: string) {
 		const kilocode: ProviderName = "kilocode"
 		let { apiConfiguration, currentApiConfigName } = await this.getState()
 

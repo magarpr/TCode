@@ -58,10 +58,10 @@ describe("RequestyHandler", () => {
 			baseURL: "https://router.requesty.ai/v1",
 			apiKey: mockOptions.requestyApiKey,
 			defaultHeaders: {
-				"HTTP-Referer": "https://kilocode.ai",
-				"X-Title": "Kilo Code",
-				"X-KiloCode-Version": Package.version,
-				"User-Agent": `Kilo-Code/${Package.version}`,
+				"HTTP-Referer": "https://takara.ai",
+				"X-Title": "TAKARA AI",
+				"X-TakaraAI-Version": Package.version,
+				"User-Agent": `TAKARA AI/${Package.version}`,
 			},
 		})
 	})

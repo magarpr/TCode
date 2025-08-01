@@ -103,10 +103,10 @@ describe("OpenAiHandler", () => {
 				baseURL: expect.any(String),
 				apiKey: expect.any(String),
 				defaultHeaders: {
-					"HTTP-Referer": "https://kilocode.ai",
-					"X-Title": "Kilo Code",
-					"X-KiloCode-Version": Package.version,
-					"User-Agent": `Kilo-Code/${Package.version}`,
+					"HTTP-Referer": "https://takara.ai",
+					"X-Title": "TAKARA AI",
+					"X-TakaraAI-Version": Package.version,
+					"User-Agent": `TAKARA AI/${Package.version}`,
 				},
 			})
 		})

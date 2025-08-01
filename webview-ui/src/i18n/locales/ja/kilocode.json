@@ -1,7 +1,7 @@
 {
 	"welcome": {
-		"greeting": "Kilo Codeへようこそ！",
-		"introText1": "Kilo Codeは無料のオープンソースAIコーディングエージェントです。",
+		"greeting": "Takara AIへようこそ！",
+		"introText1": "Takara AIは無料のオープンソースAIコーディングエージェントです。",
 		"introText2": "Claude 4 Sonnet、Gemini 2.5 Pro、GPT-4.1、その他450以上の最新のAIモデルと連携します。",
 		"introText3": "無料アカウントを作成して、任意のAIモデルで使用できる$20のトークンを取得しましょう。",
 		"ctaButton": "始める",
@@ -11,7 +11,7 @@
 	},
 	"lowCreditWarning": {
 		"addCredit": "クレジットを追加",
-		"lowBalance": "Kilo Codeの残高が少なくなっています"
+		"lowBalance": "Takara AIの残高が少なくなっています"
 	},
 	"notifications": {
 		"toolRequest": "ツールのリクエストが承認待ちです",
@@ -23,27 +23,27 @@
 			"mcp": "MCPサーバー"
 		},
 		"provider": {
-			"account": "Kilo Code アカウント",
-			"apiKey": "Kilo Code APIキー",
-			"login": "Kilo Codeにログイン",
-			"logout": "Kilo Codeからログアウト",
+			"account": "Takara AI アカウント",
+			"apiKey": "Takara AI APIキー",
+			"login": "Takara AIにログイン",
+			"logout": "Takara AIからログアウト",
 			"providerRouting": {
-				"title": "Kilo Code - OpenRouterプロバイダーのルーティング",
-				"description": "Kilo Codeは、モデルに最適な利用可能なプロバイダーにリクエストをルーティングします。デフォルトでは、稼働時間を最大化するために、リクエストはトッププロバイダー間で負荷分散されます。ただし、このモデルに使用する特定のプロバイダーを選択できます。"
+				"title": "Takara AI - OpenRouterプロバイダーのルーティング",
+				"description": "Takara AIは、モデルに最適な利用可能なプロバイダーにリクエストをルーティングします。デフォルトでは、稼働時間を最大化するために、リクエストはトッププロバイダー間で負荷分散されます。ただし、このモデルに使用する特定のプロバイダーを選択できます。"
 			}
 		},
 		"contextManagement": {
 			"allowVeryLargeReads": {
 				"label": "非常に大きなファイルの読み取りを許可",
-				"description": "有効にすると、Kilo Codeはコンテキストウィンドウをオーバーフローする可能性が高い場合でも、非常に大きなファイルやMCP出力の読み取りを実行します（コンテンツサイズがコンテキストウィンドウの80%以上）。"
+				"description": "有効にすると、Takara AIはコンテキストウィンドウをオーバーフローする可能性が高い場合でも、非常に大きなファイルやMCP出力の読み取りを実行します（コンテンツサイズがコンテキストウィンドウの80%以上）。"
 			}
 		},
 		"systemNotifications": {
 			"label": "システム通知を有効にする",
-			"description": "有効にすると、Kilo Codeはタスクの完了やエラーなどの重要なイベントについてシステム通知を送信します。",
+			"description": "有効にすると、Takara AIはタスクの完了やエラーなどの重要なイベントについてシステム通知を送信します。",
 			"testButton": "通知をテスト",
-			"testTitle": "Kilo Code",
-			"testMessage": "これはKilo Codeからのテスト通知です。"
+			"testTitle": "Takara AI",
+			"testMessage": "これはTakara AIからのテスト通知です。"
 		},
 		"terminal": {
 			"commandGenerator": {
@@ -58,7 +58,7 @@
 	},
 	"chat": {
 		"condense": {
-			"wantsToCondense": "Kilo Codeは会話を要約したいと思っています",
+			"wantsToCondense": "Takara AIは会話を要約したいと思っています",
 			"condenseConversation": "会話を要約する"
 		}
 	},
@@ -81,15 +81,15 @@
 	},
 	"docs": "ドキュメント",
 	"rules": {
-		"tooltip": "Kilo Codeルールとワークフローを管理",
-		"ariaLabel": "Kilo Codeルール",
+		"tooltip": "Takara AIルールとワークフローを管理",
+		"ariaLabel": "Takara AIルール",
 		"tabs": {
 			"rules": "ルール",
 			"workflows": "ワークフロー"
 		},
 		"description": {
-			"rules": "ルールを使用すると、Kilo Codeがすべてのモードとすべてのプロンプトで従うべき指示を提供できます。これらは、ワークスペースまたはグローバルですべての会話にコンテキストと設定を含める永続的な方法です。",
-			"workflows": "ワークフローは会話用の準備されたテンプレートです。ワークフローを使用すると、頻繁に使用するプロンプトを定義でき、サービスのデプロイやPRの送信など、反復的なタスクを通じてKilo Codeをガイドする一連のステップを含めることができます。ワークフローを呼び出すには、次のように入力します",
+			"rules": "ルールを使用すると、Takara AIがすべてのモードとすべてのプロンプトで従うべき指示を提供できます。これらは、ワークスペースまたはグローバルですべての会話にコンテキストと設定を含める永続的な方法です。",
+			"workflows": "ワークフローは会話用の準備されたテンプレートです。ワークフローを使用すると、頻繁に使用するプロンプトを定義でき、サービスのデプロイやPRの送信など、反復的なタスクを通じてTakara AIをガイドする一連のステップを含めることができます。ワークフローを呼び出すには、次のように入力します",
 			"workflowsInChat": "チャットで。"
 		},
 		"sections": {

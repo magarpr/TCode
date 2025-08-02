@@ -87,7 +87,7 @@ describe("ProviderSettingsManager", () => {
 							config: {},
 						},
 						test: {
-							apiProvider: "anthropic",
+							apiProvider: "openai",
 						},
 					},
 					migrations: {
@@ -120,11 +120,11 @@ describe("ProviderSettingsManager", () => {
 							rateLimitSeconds: undefined,
 						},
 						test: {
-							apiProvider: "anthropic",
+							apiProvider: "openai",
 							rateLimitSeconds: undefined,
 						},
 						existing: {
-							apiProvider: "anthropic",
+							apiProvider: "openai",
 							// this should not really be possible, unless someone has loaded a hand edited config,
 							// but we don't overwrite so we'll check that
 							rateLimitSeconds: 43,
@@ -157,11 +157,11 @@ describe("ProviderSettingsManager", () => {
 							consecutiveMistakeLimit: undefined,
 						},
 						test: {
-							apiProvider: "anthropic",
+							apiProvider: "openai",
 							consecutiveMistakeLimit: undefined,
 						},
 						existing: {
-							apiProvider: "anthropic",
+							apiProvider: "openai",
 							// this should not really be possible, unless someone has loaded a hand edited config,
 							// but we don't overwrite so we'll check that
 							consecutiveMistakeLimit: 5,
@@ -198,11 +198,11 @@ describe("ProviderSettingsManager", () => {
 							todoListEnabled: undefined,
 						},
 						test: {
-							apiProvider: "anthropic",
+							apiProvider: "openai",
 							todoListEnabled: undefined,
 						},
 						existing: {
-							apiProvider: "anthropic",
+							apiProvider: "openai",
 							// this should not really be possible, unless someone has loaded a hand edited config,
 							// but we don't overwrite so we'll check that
 							todoListEnabled: false,
@@ -247,7 +247,7 @@ describe("ProviderSettingsManager", () => {
 						id: "default",
 					},
 					test: {
-						apiProvider: "anthropic",
+						apiProvider: "openai",
 						id: "test-id",
 					},
 				},
@@ -266,7 +266,7 @@ describe("ProviderSettingsManager", () => {
 			const configs = await providerSettingsManager.listConfig()
 			expect(configs).toEqual([
 				{ name: "default", id: "default", apiProvider: undefined },
-				{ name: "test", id: "test-id", apiProvider: "anthropic" },
+				{ name: "test", id: "test-id", apiProvider: "openai" },
 			])
 		})
 
@@ -363,7 +363,7 @@ describe("ProviderSettingsManager", () => {
 			)
 
 			const newConfig: ProviderSettings = {
-				apiProvider: "anthropic",
+				apiProvider: "openai",
 				apiKey: "test-key",
 			}
 			const newConfigWithExtra: ProviderSettings = {
@@ -402,7 +402,7 @@ describe("ProviderSettingsManager", () => {
 				currentApiConfigName: "default",
 				apiConfigs: {
 					test: {
-						apiProvider: "anthropic",
+						apiProvider: "openai",
 						apiKey: "old-key",
 						id: "test-id",
 					},
@@ -415,7 +415,7 @@ describe("ProviderSettingsManager", () => {
 			mockSecrets.get.mockResolvedValue(JSON.stringify(existingConfig))
 
 			const updatedConfig: ProviderSettings = {
-				apiProvider: "anthropic",
+				apiProvider: "openai",
 				apiKey: "new-key",
 			}
 
@@ -425,7 +425,7 @@ describe("ProviderSettingsManager", () => {
 				currentApiConfigName: "default",
 				apiConfigs: {
 					test: {
-						apiProvider: "anthropic",
+						apiProvider: "openai",
 						apiKey: "new-key",
 						id: "test-id",
 					},
@@ -471,7 +471,7 @@ describe("ProviderSettingsManager", () => {
 						id: "default",
 					},
 					test: {
-						apiProvider: "anthropic",
+						apiProvider: "openai",
 						id: "test-id",
 					},
 				},
@@ -528,7 +528,7 @@ describe("ProviderSettingsManager", () => {
 				currentApiConfigName: "default",
 				apiConfigs: {
 					test: {
-						apiProvider: "anthropic",
+						apiProvider: "openai",
 						apiKey: "test-key",
 						id: "test-id",
 					},
@@ -544,7 +544,7 @@ describe("ProviderSettingsManager", () => {
 			const { name, ...providerSettings } = await providerSettingsManager.activateProfile({ name: "test" })
 
 			expect(name).toBe("test")
-			expect(providerSettings).toEqual({ apiProvider: "anthropic", apiKey: "test-key", id: "test-id" })
+			expect(providerSettings).toEqual({ apiProvider: "openai", apiKey: "test-key", id: "test-id" })
 
 			// Get the stored config to check the structure.
 			const calls = mockSecrets.store.mock.calls
@@ -552,7 +552,7 @@ describe("ProviderSettingsManager", () => {
 			expect(storedConfig.currentApiConfigName).toBe("test")
 
 			expect(storedConfig.apiConfigs.test).toEqual({
-				apiProvider: "anthropic",
+				apiProvider: "openai",
 				apiKey: "test-key",
 				id: "test-id",
 			})
@@ -575,7 +575,7 @@ describe("ProviderSettingsManager", () => {
 			mockSecrets.get.mockResolvedValue(
 				JSON.stringify({
 					currentApiConfigName: "default",
-					apiConfigs: { test: { apiProvider: "anthropic", id: "test-id" } },
+					apiConfigs: { test: { apiProvider: "openai", id: "test-id" } },
 					migrations: {
 						rateLimitSecondsMigrated: true,
 						diffSettingsMigrated: true,
@@ -595,7 +595,7 @@ describe("ProviderSettingsManager", () => {
 				currentApiConfigName: "valid",
 				apiConfigs: {
 					valid: {
-						apiProvider: "anthropic",
+						apiProvider: "openai",
 						apiKey: "valid-key",
 						apiModelId: "claude-3-opus-20240229",
 						rateLimitSeconds: 0,
@@ -636,7 +636,7 @@ describe("ProviderSettingsManager", () => {
 			mockSecrets.get.mockResolvedValue(
 				JSON.stringify({
 					currentApiConfigName: "test",
-					apiConfigs: { test: { apiProvider: "anthropic", id: "test-id" } },
+					apiConfigs: { test: { apiProvider: "openai", id: "test-id" } },
 				}),
 			)
 
@@ -651,7 +651,7 @@ describe("ProviderSettingsManager", () => {
 		it("should return true for existing config", async () => {
 			const existingConfig: ProviderProfiles = {
 				currentApiConfigName: "default",
-				apiConfigs: { default: { id: "default" }, test: { apiProvider: "anthropic", id: "test-id" } },
+				apiConfigs: { default: { id: "default" }, test: { apiProvider: "openai", id: "test-id" } },
 				migrations: { rateLimitSecondsMigrated: false },
 			}
 

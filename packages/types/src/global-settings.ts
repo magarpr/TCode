@@ -174,32 +174,11 @@ export type RooCodeSettings = GlobalSettings & ProviderSettings
  * SecretState
  */
 export const SECRET_STATE_KEYS = [
-	"apiKey",
-	"glamaApiKey",
-	"openRouterApiKey",
-	"awsAccessKey",
-	"awsApiKey",
-	"awsSecretKey",
-	"awsSessionToken",
 	"openAiApiKey",
-	"geminiApiKey",
 	"openAiNativeApiKey",
-	"deepSeekApiKey",
-	"moonshotApiKey",
-	"mistralApiKey",
-	"unboundApiKey",
-	"requestyApiKey",
-	"xaiApiKey",
-	"groqApiKey",
-	"chutesApiKey",
-	"litellmApiKey",
 	"codeIndexOpenAiKey",
 	"codeIndexQdrantApiKey",
-	"kilocodeToken", // kilocode_change
 	"codebaseIndexOpenAiCompatibleApiKey",
-	"codebaseIndexGeminiApiKey",
-	"codebaseIndexMistralApiKey",
-	"huggingFaceApiKey",
 ] as const satisfies readonly (keyof ProviderSettings)[]
 export type SecretState = Pick<ProviderSettings, (typeof SECRET_STATE_KEYS)[number]>
 
@@ -225,8 +204,7 @@ export const isGlobalStateKey = (key: string): key is Keys<GlobalState> =>
 
 // Default settings when running evals (unless overridden).
 export const EVALS_SETTINGS: RooCodeSettings = {
-	apiProvider: "openrouter",
-	openRouterUseMiddleOutTransform: false,
+	apiProvider: "openai",
 
 	lastShownAnnouncementId: "jul-09-2025-3-23-0",
 

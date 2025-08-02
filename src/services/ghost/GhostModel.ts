@@ -18,7 +18,7 @@ export class GhostModel {
 
 	public async reload(settings: GhostServiceSettings, providerSettingsManager: ProviderSettingsManager) {
 		this.apiConfigId = settings?.apiConfigId || null
-		const defaultApiConfigId = ContextProxy.instance?.getValues?.()?.currentApiConfigName || ""
+		const defaultApiConfigId = ContextProxy.instance?.getValues?.()?.currentApiConfigName || "default"
 
 		const profileQuery = this.apiConfigId
 			? {

@@ -8,11 +8,11 @@ describe("GLOBAL_STATE_KEYS", () => {
 	})
 
 	it("should contain provider settings keys", () => {
-		expect(GLOBAL_STATE_KEYS).toContain("anthropicBaseUrl")
+		expect(GLOBAL_STATE_KEYS).toContain("openAiBaseUrl")
 	})
 
 	it("should not contain secret state keys", () => {
-		expect(GLOBAL_STATE_KEYS).not.toContain("openRouterApiKey")
+		expect(GLOBAL_STATE_KEYS).not.toContain("openAiApiKey")
 	})
 
 	it("should contain OpenAI Compatible base URL setting", () => {

@@ -42,6 +42,23 @@ const baseProviderSettingsSchema = z.object({
 	reasoningEffort: reasoningEffortsSchema.optional(),
 	modelMaxTokens: z.number().optional(),
 	modelMaxThinkingTokens: z.number().optional(),
+
+	// AWS Bedrock configuration
+	awsApiKey: z.string().optional(),
+	awsProfileName: z.string().optional(),
+	awsAccessKey: z.string().optional(),
+	awsSecretKey: z.string().optional(),
+	awsSessionToken: z.string().optional(),
+	awsRegion: z.string().optional(),
+	awsCrossRegion: z.boolean().optional(),
+	awsUsePromptCache: z.boolean().optional(),
+	awsCustomArn: z.string().optional(),
+	awsBedrockVpc: z
+		.object({
+			useCustomVpcEndpoint: z.boolean().optional(),
+			vpcEndpointUrl: z.string().optional(),
+		})
+		.optional(),
 })
 
 // Several of the providers share common model config properties.
@@ -68,7 +85,7 @@ const openAiNativeSchema = apiModelIdProviderModelSchema.extend({
 	openAiNativeBaseUrl: z.string().optional(),
 })
 
-const defaultSchema = z.object({
+const defaultSchema = baseProviderSettingsSchema.extend({
 	apiProvider: z.undefined(),
 })
 

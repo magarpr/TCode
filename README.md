@@ -57,3 +57,8 @@ TAKARA AI is a direct fork from Roo Code, but also includes the following featur
 ## Extension Development
 
 For details on building and developing the extension, see [DEVELOPMENT.md](/DEVELOPMENT.md)
+
+### Local development setup
+
+1. Copy `.env.sample` to `src/.env`.
+2. Set `KILOCODE_POSTHOG_API_KEY` if you want to enable telemetry.
